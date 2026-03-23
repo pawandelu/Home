@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    font-family: "Roboto", sans-serif;
+}
+
+.bg-image {
+    background-image: url(/assets/image/png/bg-image.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1620px;
+}
+
+.nav {
+    width: 1920px;
+    height: 174px;
+}
+
+.nav-icon {
+    font-weight: 500;
+    font-size: 24.7px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    vertical-align: bottom;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header-svg {
+    width: 29.0379638671875px;
+    height: 29.0379638671875px;
+}
+
+.line {
+    width: 80%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.heading {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 97.35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    margin-top: 295px;
+}
+
+.pb_44 {
+    padding-bottom: 44px !important;
+}
+
+.pt_56 {
+    padding-top: 56px !important;
+}
+
+.center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-w {
+    max-width: 960px;
+    width: 100%;
+    height: 523px;
+}
+
+.list-unstyled {
+    font-weight: 500;
+    font-size: 24.7px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    vertical-align: bottom;
+}
+
+.list-unstyled a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.container-2 {
+    max-width: 1320px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero {
+    min-height: calc(100vh - 156px);
+    width: 100%;
+}
+
+.container-2 h1 {
+    width: 920px;
+    font-weight: 700;
+    font-size: 97.35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.container-2 p {
+    width: 835px;
+    font-weight: 500;
+    font-size: 30.57px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.small-bg-img {
+    width: 100%;
+    height: 523px;
+    overflow-x: hidden;
+}
+
+.position-absolute {
+    width: 254px;
+    height: 156px;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    gap: 5px;
+    z-index: 0;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width:992px) {
+    .hero-svg {
+        width: 140px !important;
+    }
+
+    .container-2 h1 {
+        font-size: 75.35px;
+    }
+
+    .container-2 p {
+        font-size: 28.57px;
+        width: 100%;
+        max-width: 680px;
+    }
+
+    .list-unstyled {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex !important;
+    }
+
+    .hero h1,
+    p {
+        margin-left: 20px;
+    }
+
+    .menu {
+        position: fixed;
+        background-color: black;
+        color: aliceblue;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        transition: all 0.3s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu a {
+        color: white;
+        font-size: 24px;
+        gap: 10px;
+    }
+
+    #menu-button:checked~.menu {
+        left: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .container-2 h1 {
+        font-size: 55.35px;
+        width: 700px;
+    }
+
+    .container-2 p {
+        font-size: 22.57px;
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .hero-svg img {
+        width: 150px;
+    }
+
+    .icon-wraper img {
+        width: 20px;
+    }
+
+    .small-bg-img {
+        width: 100%;
+        height: 523px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width:540px) {
+    .container-2 h1 {
+        font-size: 34.35px;
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .container-2 p {
+        font-size: 14.57px;
+        width: 100%;
+        max-width: 365px;
+    }
+
+    header {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
